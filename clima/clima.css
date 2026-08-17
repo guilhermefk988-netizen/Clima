@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    cursor: pointer;
+}
+.imgens {
+    width: 10%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.input {
+    padding-right: 10vw;
+
+    input {
+        padding: 1rem 8rem 1rem 1rem;
+        border-radius: 3vw;
+        border: none;
+        box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+        background: rgb(255, 255, 255, 0.1);
+        outline: none;
+        text-align: start;
+        color: white;
+    }
+
+}
+::placeholder{
+    color: white;
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.informações {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardGrande {
+    width: 85%;
+    height: 80%;
+    background: linear-gradient(135deg, #CBE3F9 0%, #D0E5FA 45%, #F2F5F8 100%);
+    border-radius: 2vw;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+.informações__lugar {
+    width: 100%;
+    height: 40vh;
+
+    display: flex;
+}
+
+.Informação__do__lugar {
+    width: 50%;
+    height: 100%;
+    padding: 3rem;
+
+    h2 {
+        font-size: 5vw;
+        font-weight: 400;
+    }
+
+    .informações__parte1 {
+        h3 {
+            font-size: 2vw;
+        }
+
+        p {
+            font-weight: 100;
+            color: rgb(105, 105, 105);
+        }
+    }
+}
+
+.Sol__imagem {
+    width: 40%;
+    height: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(0 0 35px white);
+    }
+}
+
+.Parte__2 {
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1vw;
+}
+
+.card {
+    width: 15%;
+    height: 80%;
+    background: linear-gradient(135deg, #CBE3F9 0%, #D0E5FA 45%, #F2F5F8 100%);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    img{
+        width: 3vw;
+        height: auto;
+    }
+}
+.card:hover{
+    background: #F2F5F8;
+}
+.Parte3{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2vw;
+    padding: 1rem;
+}
+.card__parte3{
+    width: 12%;
+    height: 15vh;
+    background: linear-gradient(135deg, #CBE3F9 0%, #D0E5FA 45%, #F2F5F8 100%);
+    box-shadow: 0 0 5px rgb(0, 0, 0,0.3);
+    border-radius: 0.3rem;
+}
+.card__parte3:hover{
+    background: #F2F5F8;
+}
+.setinhas{
+gap: 2rem;
+display: flex;
+margin-top: 1rem;
+
+span{
+    height: 100%;
+        display: flex;
+    align-items: center;
+}
+}
