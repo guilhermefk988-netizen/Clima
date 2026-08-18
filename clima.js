@@ -51,8 +51,12 @@ function busca() {
                     <p><b>${dado.description}</b></p>
 
                     <div class="setinhas">
-                        <span>${dados.main.temp_max}°C</span>
-                        <span>${dados.main.temp_min}°C</span>
+                        <span><img width="25" height="30"
+                                src="https://img.icons8.com/fluency-systems-filled/48/ff0000/thick-arrow-pointing-up.png"
+                                alt="thick-arrow-pointing-up" />${dados.main.temp_max}°C</span>
+                        <span><img width="25" height="30"
+                                src="https://img.icons8.com/fluency-systems-filled/48/0084ff/thick-arrow-pointing-down.png"
+                                alt="thick-arrow-pointing-down" />${dados.main.temp_min}°C</span>
                     </div>
                 </div>
                 <div class="Sol__imagem">
@@ -77,7 +81,7 @@ function busca() {
                    
                 <div>  
                     <p>Vento</p>
-                    <h2>${dados.wind.speed}</h2>
+                    <h2>${dados.wind.speed * 3.6}</h2>
                 </div>
             </div>  
 
@@ -109,7 +113,7 @@ function busca() {
                 </div>
                 </div>
                 <div class="card">
-<img width="26" height="26" src="https://img.icons8.com/metro/26/sunset.png" alt="sunset"/>s
+<img width="26" height="26" src="https://img.icons8.com/metro/26/sunset.png" alt="sunset"/>
 <div>
                     <p>Pôr do sol</p>
                     <h2>${porSol}</h2>
