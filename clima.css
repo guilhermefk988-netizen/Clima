@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button {
+  cursor: pointer;
+}
+.imgens {
+  width: 10%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.input {
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+  background: rgb(255, 255, 255, 0.1);
+  border-radius: clamp(2rem,3vw, 4rem);
+  margin-right: clamp(5rem,10vw,15rem);
+
+  button {
+    background: rgb(255, 255, 255,0.3);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    width: clamp(2rem,3vw,5rem);
+    height: clamp(2rem,3vw,5rem);
+    margin-right: clamp(0.8rem,1vw, 2rem);
+  }
+  button:hover{
+    background: rgb(255, 255, 255,0.5);    
+  }
+
+  input {
+    padding: clamp(1rem, 1vw, 3rem) 
+         clamp(1rem, 8vw, 8rem)
+         clamp(1rem, 1vw, 3rem)
+         clamp(1rem, 1vw, 3rem);
+    border: none;
+    background: none;
+    outline: none;
+    text-align: start;
+    color: white;
+  }
+}
+::placeholder {
+  color: white;
+}
+
+.section1 {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.informações {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardGrande {
+  width: 85%;
+  height: 80%;
+  background: linear-gradient(135deg, #cbe3f9 0%, #d0e5fa 45%, #f2f5f8 100%);
+  border-radius: 2vw;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+.informações__lugar {
+  width: 100%;
+  height: 40vh;
+
+  display: flex;
+}
+
+.Informação__do__lugar {
+  width: 50%;
+  height: 100%;
+  padding: clamp(1rem, 3vw, 4rem);
+
+  h2 {
+    font-size: clamp(3rem,5vw, 7rem);
+    font-weight: 400;
+  }
+
+  .informações__parte1 {
+    h3 {
+      font-size: clamp(1rem,2vw,4rem) ;
+    }
+
+    p {
+      font-weight: 100;
+      color: rgb(105, 105, 105);
+    }
+  }
+}
+
+.Sol__imagem {
+  width: 40%;
+  height: clamp(50%,100%,100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: clamp(10rem,30vw, 50rem);
+    height: auto;
+    filter: drop-shadow(0 0 35px white);
+  }
+}
+
+.Parte__2 {
+  width: 100%;
+  height: 20vh;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1vw;
+}
+
+.card {
+  width: clamp(5rem,13vw, 16rem);
+  height: 80%;
+  background: linear-gradient(135deg, #cbe3f9 0%, #d0e5fa 45%, #f2f5f8 100%);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+
+  
+  img {
+    width: clamp(1.5rem,3vw, 4rem);
+    height: auto;
+  }
+p{
+    font-size: clamp(0.8rem,1.3vw,2.5rem);
+}
+  h2{
+    font-size: clamp(1rem,2vw, 3.5rem);
+  }
+}
+.card:hover {
+  background: #f2f5f8;
+}
+.Parte3 {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2vw;
+  padding: 1rem;
+}
+.card__parte3 {
+  width: 12%;
+  height: 15vh;
+  background: linear-gradient(135deg, #cbe3f9 0%, #d0e5fa 45%, #f2f5f8 100%);
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+  border-radius: 0.3rem;
+}
+.card__parte3:hover {
+  background: #f2f5f8;
+}
+.setinhas {
+  gap: 2vw;
+  display: flex;
+  margin-top: 1rem;
+
+  span {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 768px){
+.Parte__2{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,30%);
+    .card{
+  width: clamp(5rem,25vw, 16rem);
+    }
+}
+.imgens{
+    opacity: 0;
+}
+}
