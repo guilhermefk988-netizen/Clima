@@ -1,103 +1,205 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CLIMA</title>
-    <link rel="stylesheet" href="clima.css" />
-  </head>
 
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+    <link rel="icon" type="image/jpeg" href="conteudos-extra/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="carro.css">
+    <script src="carro.js" defer></script>
+</head>
+
+<body>
     <header class="header">
-      <div class="imgens">
-        <img src="img/iconizinho.png" alt="" />
-        <p>Clima</p>
-      </div>
-      <div class="input">
-        <input placeholder="Digite o nome da cidade..." type="text" />
+        <div class="alinhamento__header">
+            <img src="conteudos-extra/logo2.png" alt="">
 
-        <button id="butao" onclick="busca()">
-          <img
-            width="30"
-            height="30"
-            src="https://img.icons8.com/ios/50/search--v1.png"
-            alt="search--v1"
-          />
-        </button>
-      </div>
+            <nav class="nav">
+                <a href="#">HISTÓRIA</a>
+                <a href="#">DESEMPENHO</a>
+                <a href="#">ESPECIFICAÇÕES</a>
+                <a href="#">GALERIA</a>
+            </nav>
+            <nav class="nav__celula">
+
+                <div class="botao__celula">
+                    <button style="border: none; transition: 0s;" onclick="buton()">☰</button>
+                </div>
+                <div class="links">
+                    <a href="#">HISTÓRIA</a>
+                    <a href="#">DESEMPENHO</a>
+                    <a href="#">ESPECIFICAÇÕES</a>
+                    <a href="#">GALERIA</a>
+                </div>
+
+            </nav>
+            <button class="button">EXPLORAR M3 E92</button>
+        </div>
     </header>
 
     <section class="section1">
-      <img src="img/fundo.png" alt="" />
+        <video src="conteudos-extra/video.mp4" autoplay muted loop playsinline></video>
+
+        <div class="informações__section1">
+            <div class="informacçao__dentro__da__sessao">
+                <h3>BMW M3 E92</h3>
+                <h2>PURE PERFORMANCE.</h2>
+                <h3>TIMELESS LEGEND.</h3>
+                <hr>
+                <p>O equilíbrio perfeito entre potência, precisão e emoção. O M3 E92 não é apenas um carro, é uma
+                    experiência que define gerações.</p>
+                <button>CONHEÇA A LENDA</button>
+            </div>
+        </div>
+
+        <div class="carrosel">
+            <div class="posição_carrosel">
+                <h2 class="frases" style=" --delay: 0s">ESSÊNCIA</h2>
+                <h2 class="frases" style=" --delay: 3s">PRECISÃO</h2>
+                <h2 class="frases" style=" --delay: 6s">POTÊNCIA</h2>
+                <h2 class="frases" style=" --delay: 9s">EMOÇÃO</h2>
+                <h2 class="frases" style=" --delay: 12s">LEGADO</h2>
+                <h2 class="frases" style=" --delay: 15s">EXCELÊNCIA</h2>
+                <h2 class="frases" style=" --delay: 18s">DOMÍNIO</h2>
+            </div>
+        </div>
+
     </section>
-    <main class="informações">
-      <div class="cardGrande">
-        <div class="informações__lugar">
-          <div class="Informação__do__lugar">
-            <div class="informações__parte1">
-              <h3>São Paulo, SP</h3>
-              <p>Hoje, 20 de maio</p>
+
+    <section class="section2">
+        <div class="video2">
+            <video src="conteudos-extra/video2.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="Infoemações__historia">
+            <div class="Informações__dentro__his">
+                <h2>NASCIDA PARA FAZER HISTÓRIA.</h2>
+                <p>Mais que um carro, a BMW M3 E92 é um marco
+                    na história da BMW M. Um ícone que combina
+                    engenharia, emoção e performance pura.</p>
             </div>
-            <h2>24 °c</h2>
+            <div class="carros">
+                <div class="texto__historia">
+                    <h2>UMA LINHAGEM <br> DE EXCELÊNCIA.</h2>
+                    <p>A história da M3 é marcada por
+                        inovação, competição e uma
+                        busca incansável pela perfeição.
+                        Cada geração carrega o DNA das
+                        pistas para as ruas.</p>
+                    <button>CONHEÇA TODA LINHAGEM</button>
+                </div>
+                <div class="Historia__carros">
+                    <div class="carros__historia">
+                        <div class="data">
+                            <h3>1986</h3>
+                            <h2>E30</h2>
+                        </div>
+                        <div class="imagem">
 
-            <p><b>Parcialmente nublado</b></p>
+                        </div>
+                        <div class="texto__imagem">
+                            <p>A origem de um ícone.
+                                Leve, ágil e feita para
+                                dominar as pistas.</p>
+                        </div>
+                        <div class="circulo">
+                            <div class="circular"></div>
+                        </div>
+                    </div>
+                    <div class="carros__historia">
+                        <div class="data">
+                            <h3>1992</h3>
+                            <h2>E36</h2>
+                        </div>
+                        <div class="imagem">
 
-            <div class="setinhas">
-              <span
-                ><img
-                  width="25"
-                  height="30"
-                  src="https://img.icons8.com/fluency-systems-filled/48/ff0000/thick-arrow-pointing-up.png"
-                  alt="thick-arrow-pointing-up"
-                />28°C</span
-              >
-              <span
-                ><img
-                  width="25"
-                  height="30"
-                  src="https://img.icons8.com/fluency-systems-filled/48/0084ff/thick-arrow-pointing-down.png"
-                  alt="thick-arrow-pointing-down"
-                />16°C</span
-              >
+                        </div>
+                        <div class="texto__imagem">
+                            <p>Mais potência, mais
+                                tecnologia e o M3 se
+                                tornando uma lenda.</p>
+                        </div>
+                        <div class="circulo">
+                            <div class="circular"></div>
+                        </div>
+                    </div>
+                    <div class="carros__historia">
+                        <div class="data">
+                            <h3>2000</h3>
+                            <h2>E46</h2>
+                        </div>
+                        <div class="imagem">
+
+                        </div>
+                        <div class="texto__imagem">
+                            <p>Equilíbrio perfeito entre
+                                performance, elegância
+                                e dirigibilidade.</p>
+                        </div>
+                        <div class="circulo">
+                            <div class="circular"></div>
+                        </div>
+                    </div>
+                    <div class="carros__historia">
+                        <div class="data">
+                            <h3>2007</h3>
+                            <h2>E92</h2>
+                        </div>
+                        <div class="imagem">
+
+                        </div>
+                        <div class="texto__imagem">
+                            <p>O motor V8 aspirado que
+                                elevou a experiência de
+                                dirigir a outro nível.</p>
+                        </div>
+                        <div class="circulo">
+                            <div class="circular"></div>
+                        </div>
+                    </div>
+                    <div class="carros__historia">
+                        <div class="data">
+                            <h3>2014</h3>
+                            <h2>F80</h2>
+                        </div>
+                        <div class="imagem">
+
+                        </div>
+                        <div class="texto__imagem">
+                            <p>Turbo, tecnologia e
+                                uma nova era de
+                                desempenho.</p>
+                        </div>
+                        <div class="circulo">
+                            <div class="circular"></div>
+                        </div>
+                    </div>
+                    <div class="carros__historia">
+                        <div class="data">
+                            <h3>2020</h3>
+                            <h2>G80</h2>
+                        </div>
+                        <div class="imagem">
+
+                        </div>
+                        <div class="texto__imagem">
+                            <p>A evolução continua.
+                                Mais M3 do que nunca,
+                                mais emoção sempre.</p>
+                        </div>
+                        <div class="circulo">
+                            <div class="circular"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+    </section>
+</body>
 
-          <div class="Sol__imagem">
-            <img src="img/imagemSol.png" alt="" />
-          </div>
-        </div>
-        <div class="Parte__2">
-          <div class="card">
-            <p></p>
-            <h2></h2>
-          </div>
-          <div class="card">
-            <p></p>
-            <h2></h2>
-          </div>
-          <div class="card">
-            <p></p>
-            <h2></h2>
-          </div>
-          <div class="card">
-            <p></p>
-            <h2></h2>
-          </div>
-          <div class="card">
-            <p></p>
-            <h2></h2>
-          </div>
-          <div class="card">
-            <p></p>
-            <h2></h2>
-          </div>
-        </div>
-
-        <div class="Parte3">
-          
-        </div>
-      </div>
-    </main>
-  </body>
-  <script src="clima.js"></script>
 </html>
